@@ -4,7 +4,6 @@
 
 h1, p {
     text-align: center;
-    font-family: 'open-sans', sans-serif;
 }
 
 canvas {
@@ -16,3 +15,38 @@ canvas {
 #SawarabiMincho {
     font-family: 'Sawarabi Mincho', serif;
 }
+
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+
+#wrapper p {
+    padding: 300px 0;
+    text-align: center;
+}
+
+/*========= waveを描画するエリア設定 ===============*/
+
+
+.wave {
+    position: relative;
+}
+
+    .wave:nth-child(1) {
+        background: #fff;
+    }
+
+    .wave:nth-child(2) {
+        background: #ccc;
+    }
+
+    .wave:nth-child(3) {
+        background: #43c0e4;
+    }
+
+    .wave canvas {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
